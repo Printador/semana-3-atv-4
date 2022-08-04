@@ -1,29 +1,43 @@
-valor_1 = complex(input("Digite o primeiro número: "))
-valor_2 = complex(input("Digite o segundo número: "))
-valor_3 = complex(input("Digite o terceiro número: "))
-print("Qual a operação? (+, -, *, /):")
-operacao = input()
+class calc:
+  v_1 = 1.0
+  v_2 = 1.0
+  v_3 = 1.0
+  op = ""
 
-if (operacao == "+"):
-  res_1 = (valor_1 + valor_2 + valor_3)
-  print("O resultado é: ",(res_1))
-  print("A parte real é: ",(res_1.real)) 
-  print("A parte imaginária é: ",(res_1.imag))
+  def valores():
+    clc = calc()
+    clc.v_1 = complex(input("Digite o primeiro número: "))
+    clc.v_2 = complex(input("Digite o segundo número: "))
+    clc.v_3 = complex(input("Digite o terceiro número: "))
+    clc.op = input("Qual a operação? (+, -, *, /):")
+    return clc
 
-elif (operacao == "-"):
-  res_2 = (valor_1 - valor_2 - valor_3)
-  print("O resultado é: ",(res_2))
-  print("A parte real é: ",(res_2.real)) 
-  print("A parte imaginária é: ",(res_2.imag))
-
-elif (operacao == "/"):
-  res_3 = (valor_1 / valor_2 / valor_3)
-  print("O resultado é: ",(res_3))
-  print("A parte real é: ",(res_3.real)) 
-  print("A parte imaginária é: ",(res_3.imag))
-
-elif (operacao == "*"):
-  res_4 = (valor_1 * valor_2 * valor_3)
-  print("O resultado é: ",(res_4))
-  print("A parte real é: ",(res_4.real)) 
-  print("A parte imaginária é: ",(res_4.imag))
+  valor_1 = complex(input("Digite o primeiro número: "))
+  valor_2 = complex(input("Digite o segundo número: "))
+  valor_3 = complex(input("Digite o terceiro número: "))
+  print("Qual a operação? (+, -, *, /):")
+  op = input()
+  
+  if (op == "+"):
+    res_1 = (valor_1 + valor_2 + valor_3)
+    print("O resultado é: ",(res_1))
+    print("A parte real é: ",(res_1.real)) 
+    print("A parte imaginária é: ",(res_1.imag))
+  
+  elif (op == "-"):
+    res_2 = (valor_1 - valor_2 - valor_3)
+    print("O resultado é: ",(res_2))
+    print("A parte real é: ",(res_2.real)) 
+    print("A parte imaginária é: ",(res_2.imag))
+  
+  elif (op == "/"):
+    res_3 = (valor_1 / valor_2 / valor_3)
+    print("O resultado é: ",(res_3))
+    print("A parte real é: ",(res_3.real)) 
+    print("A parte imaginária é: ",(res_3.imag))
+  
+  elif (op == "*"):
+    res_4 = (valor_1 * valor_2 * valor_3)
+    print("O resultado é: ",(res_4))
+    print("A parte real é: ",(res_4.real)) 
+    print("A parte imaginária é: ",(res_4.imag))
