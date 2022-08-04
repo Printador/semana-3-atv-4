@@ -41,3 +41,6 @@ class calc:
     print("O resultado é: ",(res_4))
     print("A parte real é: ",(res_4.real)) 
     print("A parte imaginária é: ",(res_4.imag))
+    
+#from calc import*
+#A SINTAXE PARA CHAMAR A TAD É A CITADA ACIMA
