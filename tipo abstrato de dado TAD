@@ -43,4 +43,4 @@ class calc:
     print("A parte imaginária é: ",(res_4.imag))
     
 #from calc import*
-#A SINTAXE PARA CHAMAR A TAD É A CITADA ACIMA
+#A SINTAXE PARA CHAMAR A TAD É A CITADA ACIMA, POIS FOI ASSIM QUE O ARQUIVO FOI SALVO "calc.py"
